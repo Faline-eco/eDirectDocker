@@ -26,3 +26,19 @@ HTTP POST request to `http://localhost:5000/translate` with the following json b
     ]
 }
 ```
+
+Should return something like:
+
+```json
+{
+    "thale cress": [
+        {
+            "common_name": "thale cress",
+            "scientific_name": "Arabidopsis thaliana"
+        }
+    ],
+    "zebra": {
+        "error": "No results found."
+    }
+}
+```
