@@ -16,7 +16,7 @@ docker run -p 5000:5000 species-rest-service
 
 ## Use
 
-HTTP POST request to `http://localhost:5000/translate` with the following json body:
+HTTP POST request to `http://localhost:5000/com2sci` with the following json body:
 
 ```json
 {
@@ -32,13 +32,8 @@ Should return something like:
 ```json
 {
     "thale cress": [
-        {
-            "common_name": "thale cress",
-            "scientific_name": "Arabidopsis thaliana"
-        }
+        "Arabidopsis thaliana"
     ],
-    "zebra": {
-        "error": "No results found."
-    }
+    "zebra": []
 }
 ```

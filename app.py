@@ -20,15 +20,16 @@ def common_to_scientific(common_name):
         for line in output_lines:
             parts = line.split("\t")
             if len(parts) == 2:
-                results.append({"common_name": parts[0], "scientific_name": parts[1]})
+                #results.append({"common_name": parts[0], "scientific_name": parts[1]})
+                results.append(parts[1])
 
-        return results if results else {"error": "No results found."}
+        return results if results else []
 
     except Exception as e:
         return {"error": str(e)}
 
 
-@app.route("/translate", methods=["POST"])
+@app.route("/com2sci", methods=["POST"])
 def translate_names():
     """
     API endpoint to translate a list of common names to scientific names.
