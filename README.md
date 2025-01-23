@@ -1,4 +1,4 @@
-# eDirect REST API
+# eDirect Common Name Resolver REST API
 
 Docker image extending the [ncbi/edirect](https://hub.docker.com/r/ncbi/edirect/tags) image with a rest api allowing to translate a list of common animal names to scientific names using [Entrez Direct](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
 
