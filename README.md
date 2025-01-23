@@ -14,6 +14,12 @@ docker build -t species-rest-service .
 docker run -p 5000:5000 species-rest-service
 ```
 
+For best performance, obtain an [API Key from NCBI](https://account.ncbi.nlm.nih.gov/settings/), and provide it as environment variable:
+
+```
+docker run -p 5000:5000 -e NCBI_API_KEY=my_awesome_entrez_key species-rest-service
+```
+
 ## Use
 
 HTTP POST request to `http://localhost:5000/com2sci` with the following json body:

@@ -16,6 +16,8 @@ USER docker
 # Set the working directory
 WORKDIR /app
 
+ENV NCBI_API_KEY=""
+
 # Copy the Flask app code to the container
 COPY app.py /app/app.py
 
